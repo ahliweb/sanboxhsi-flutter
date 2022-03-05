@@ -43,9 +43,15 @@ class MyApp extends StatelessWidget {
                       image: AssetImage('assets/images/logo-aw.png'),
                       width: 200,
                     ),
-                    Text(
-                      "Selamat Datang",
-                      style: mainHeader,
+                    Padding(
+                      padding: EdgeInsets.only(
+                        top: 2,
+                        bottom: 10,
+                      ),
+                      child: Text(
+                        "Selamat Datang",
+                        style: mainHeader,
+                      ),
                     ),
                     Text(
                       "Semoga bermanfaat selalu \nmenggunakan aplikasi ini",
