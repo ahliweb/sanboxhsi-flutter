@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'cashy app',
       theme: ThemeData(
         // This is the theme of your application.
@@ -26,9 +27,9 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           appBar: AppBar(
-            title: Text("Cashy App"),
-            backgroundColor: Colors.red,
-          ),
+              title: Text("Cashy App"),
+              backgroundColor: Colors.red,
+              actions: <Widget>[Icon(Icons.mail)]),
           body: SafeArea(
             child: Text("Flutter Pertama"),
           )),
