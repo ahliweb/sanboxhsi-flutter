@@ -29,7 +29,9 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
               title: Text("Cashy App"),
               backgroundColor: Colors.red,
-              actions: <Widget>[Icon(Icons.mail)]),
+              actions: <Widget>[
+                IconButton(icon: Icon(Icons.mail), onPressed: () {})
+              ]),
           body: SafeArea(
             child: Text("Flutter Pertama"),
           )),
