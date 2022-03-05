@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'cashy app',
+      title: 'aw app',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -27,13 +27,14 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           appBar: AppBar(
-            title: Text("Cashy App"),
+            title: Text("AW App"),
             backgroundColor: Colors.greenAccent,
           ),
           body: SafeArea(
             child: Container(
                 //color: Colors.greenAccent,
-                margin: EdgeInsets.only(left: 20, top: 0, right: 20, bottom: 0),
+                margin:
+                    EdgeInsets.only(left: 100, top: 0, right: 100, bottom: 0),
                 padding:
                     EdgeInsets.only(left: 0, top: 30, right: 0, bottom: 20),
                 child: Column(
