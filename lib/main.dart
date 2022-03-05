@@ -34,10 +34,9 @@ class MyApp extends StatelessWidget {
           body: SafeArea(
             child: Container(
                 //color: Colors.greenAccent,
-                margin:
-                    EdgeInsets.only(left: 100, top: 0, right: 100, bottom: 0),
+                margin: EdgeInsets.only(left: 60, top: 0, right: 60, bottom: 0),
                 padding:
-                    EdgeInsets.only(left: 0, top: 30, right: 0, bottom: 20),
+                    EdgeInsets.only(left: 0, top: 20, right: 0, bottom: 20),
                 child: Column(
                   children: <Widget>[
                     Image(
@@ -49,8 +48,9 @@ class MyApp extends StatelessWidget {
                       style: mainHeader,
                     ),
                     Text(
-                      "Semoga bermanfaat selalu menggunakan aplikasi ini",
+                      "Semoga bermanfaat selalu \nmenggunakan aplikasi ini",
                       style: subHeader,
+                      textAlign: TextAlign.center,
                     )
                   ],
                 )),
