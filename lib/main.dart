@@ -34,29 +34,34 @@ class MyApp extends StatelessWidget {
           body: SafeArea(
             child: Container(
                 //color: Colors.greenAccent,
-                margin: EdgeInsets.only(left: 60, top: 0, right: 60, bottom: 0),
-                padding:
-                    EdgeInsets.only(left: 0, top: 20, right: 0, bottom: 20),
-                child: Column(
+                margin: EdgeInsets.only(left: 10, top: 0, right: 10, bottom: 0),
+                padding: EdgeInsets.only(left: 0, top: 0, right: 0, bottom: 0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Image(
-                      image: AssetImage('assets/images/logo-aw.png'),
-                      width: 200,
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(
-                        top: 2,
-                        bottom: 10,
-                      ),
-                      child: Text(
-                        "Selamat Datang",
-                        style: mainHeader,
-                      ),
-                    ),
-                    Text(
-                      "Semoga bermanfaat selalu \nmenggunakan aplikasi ini",
-                      style: subHeader,
-                      textAlign: TextAlign.center,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Image(
+                          image: AssetImage('assets/images/logo-aw.png'),
+                          height: 100,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(
+                            top: 0,
+                            bottom: 10,
+                          ),
+                          child: Text(
+                            "Selamat Datang",
+                            style: mainHeader,
+                          ),
+                        ),
+                        Text(
+                          "Semoga bermanfaat selalu \nmenggunakan aplikasi ini",
+                          style: subHeader,
+                          textAlign: TextAlign.center,
+                        )
+                      ],
                     )
                   ],
                 )),
