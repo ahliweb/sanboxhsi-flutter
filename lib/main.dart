@@ -27,20 +27,21 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           appBar: AppBar(
-              title: Text("Cashy App"),
-              backgroundColor: Colors.greenAccent,
-              actions: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.mail),
-                  onPressed: () {},
-                  color: Colors.yellowAccent,
-                )
-              ]),
+            title: Text("Cashy App"),
+            backgroundColor: Colors.greenAccent,
+          ),
           body: SafeArea(
-            child: Image(
-              image: AssetImage('assets/images/logo-aw.png'),
-              width: 200,
-            ),
+            child: Container(
+                child: Column(
+              children: <Widget>[
+                Image(
+                  image: AssetImage('assets/images/logo-aw.png'),
+                  width: 200,
+                ),
+                Text("Selamat Datang"),
+                Text("Semoga bermanfaat")
+              ],
+            )),
           )),
     );
   }
