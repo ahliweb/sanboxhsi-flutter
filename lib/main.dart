@@ -32,16 +32,20 @@ class MyApp extends StatelessWidget {
           ),
           body: SafeArea(
             child: Container(
+                //color: Colors.greenAccent,
+                margin: EdgeInsets.only(left: 20, top: 0, right: 20, bottom: 0),
+                padding:
+                    EdgeInsets.only(left: 0, top: 30, right: 0, bottom: 20),
                 child: Column(
-              children: <Widget>[
-                Image(
-                  image: AssetImage('assets/images/logo-aw.png'),
-                  width: 200,
-                ),
-                Text("Selamat Datang"),
-                Text("Semoga bermanfaat")
-              ],
-            )),
+                  children: <Widget>[
+                    Image(
+                      image: AssetImage('assets/images/logo-aw.png'),
+                      width: 200,
+                    ),
+                    Text("Selamat Datang"),
+                    Text("Semoga bermanfaat")
+                  ],
+                )),
           )),
     );
   }
