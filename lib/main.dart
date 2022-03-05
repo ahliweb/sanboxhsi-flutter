@@ -37,7 +37,10 @@ class MyApp extends StatelessWidget {
                 )
               ]),
           body: SafeArea(
-            child: Text("Flutter Pertama"),
+            child: Image(
+              image: AssetImage('assets/images/logo-aw.png'),
+              width: 200,
+            ),
           )),
     );
   }
