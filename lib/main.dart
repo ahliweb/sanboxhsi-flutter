@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'font_style.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,8 +44,14 @@ class MyApp extends StatelessWidget {
                       image: AssetImage('assets/images/logo-aw.png'),
                       width: 200,
                     ),
-                    Text("Selamat Datang"),
-                    Text("Semoga bermanfaat")
+                    Text(
+                      "Selamat Datang",
+                      style: mainHeader,
+                    ),
+                    Text(
+                      "Semoga bermanfaat selalu menggunakan aplikasi ini",
+                      style: subHeader,
+                    )
                   ],
                 )),
           )),
